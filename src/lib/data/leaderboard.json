@@ -1,0 +1,31 @@
+{
+	"_source": "Paper transferability tables (cross-model / cross-template). Authoritative reported values.",
+	"models": [
+		{ "key": "sonnet-4", "label": "Sonnet 4" },
+		{ "key": "sonnet-4-5", "label": "Sonnet 4.5" },
+		{ "key": "gpt-5-mini", "label": "GPT-5-mini" }
+	],
+	"transferMatrix": [
+		{ "source": "sonnet-4", "target": "sonnet-4", "deltaS": 2.27, "diagonal": true },
+		{ "source": "sonnet-4", "target": "sonnet-4-5", "deltaS": 1.07, "diagonal": false },
+		{ "source": "sonnet-4", "target": "gpt-5-mini", "deltaS": 0.53, "diagonal": false },
+		{ "source": "sonnet-4-5", "target": "sonnet-4", "deltaS": 1.93, "diagonal": false },
+		{ "source": "sonnet-4-5", "target": "sonnet-4-5", "deltaS": 1.2, "diagonal": true },
+		{ "source": "sonnet-4-5", "target": "gpt-5-mini", "deltaS": 0.67, "diagonal": false },
+		{ "source": "gpt-5-mini", "target": "sonnet-4", "deltaS": 0.93, "diagonal": false },
+		{ "source": "gpt-5-mini", "target": "sonnet-4-5", "deltaS": 0.13, "diagonal": false },
+		{ "source": "gpt-5-mini", "target": "gpt-5-mini", "deltaS": 0.8, "diagonal": true }
+	],
+	"means": { "matched": 1.42, "mismatched": 0.88 },
+	"templates": [
+		{ "label": "ICLR", "deltaS": 1.2, "scale": "1–10", "matched": true },
+		{ "label": "NeurIPS", "deltaS": 0.6, "scale": "1–6", "matched": false },
+		{ "label": "ICML", "deltaS": 0.53, "scale": "1–6", "matched": false }
+	],
+	"notes": {
+		"metric": "ΔS = mean review-score gain after attack. Rows: model the attack was optimized against. Columns: model that re-scored the paper.",
+		"diagonal": "Diagonal (matched) = optimized and evaluated by the same model.",
+		"offdiag": "All off-diagonal entries are positive, so attacks transfer across models. Matched mean +1.42 vs mismatched mean +0.88.",
+		"template": "ICLR-optimized papers re-scored under other venues' guidelines (reviewer: Sonnet 4.5). Scales differ (ICLR 1–10; NeurIPS/ICML 1–6), so absolute ΔS is not directly comparable across templates, but stays positive within each."
+	}
+}

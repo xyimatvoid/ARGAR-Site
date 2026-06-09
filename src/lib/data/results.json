@@ -1,0 +1,21 @@
+{
+	"headline": { "asr": 75.1, "deltaS": 1.21 },
+	"main": [
+		{ "model": "Sonnet 4", "orig": 3.8, "attacked": 5.27, "dS": 1.47, "asr": 87.0, "dStr": 3.4, "dSev": -2.81, "dCont": 6.21 },
+		{ "model": "Sonnet 4.5", "orig": 4.18, "attacked": 5.42, "dS": 1.24, "asr": 79.8, "dStr": 3.11, "dSev": -2.75, "dCont": 5.86 },
+		{ "model": "GPT-5-mini", "orig": 5.12, "attacked": 6.03, "dS": 0.91, "asr": 58.4, "dStr": 2.25, "dSev": -1.98, "dCont": 4.23 }
+	],
+	"mainNote": "Full dataset · matched setting (attacker = reviewer model) · ICLR template. All ΔS significant (Wilcoxon, p < 0.0001).",
+	"ablation": {
+		"note": "paper subset · ΔS per reviewer",
+		"reviewers": ["Sonnet 4", "Sonnet 4.5"],
+		"maxDS": 1.53,
+		"pillars": ["Closed-loop", "Full-paper", "Signal-driven"],
+		"rows": [
+			{ "method": "Zero-shot Paper Laundering", "short": "one full-paper rewrite, no iteration", "has": [false, true, false], "dS": [0.33, 0.25] },
+			{ "method": "PAA", "short": "iterative, but abstract-only", "has": [true, false, "partial"], "dS": [0.46, 0.27] },
+			{ "method": "Research Agent", "short": "iterative full-paper, no strategy selection", "has": [true, true, false], "dS": [0.9, 0.55] },
+			{ "method": "Ours", "short": "all three combined", "has": [true, true, true], "dS": [1.53, 1.02], "ours": true }
+		]
+	}
+}

@@ -1,0 +1,30 @@
+[
+	{
+		"n": "01",
+		"tag": "Condition + attack",
+		"title": "A necessary condition, and a concrete failure of it",
+		"body": "We propose resistance to presentation-only review gaming as a necessary condition for AI review automation. Adversarial repackaging breaks it: 75.1% attack success, +1.21 mean score gain, across three models and templates.",
+		"href": "#results"
+	},
+	{
+		"n": "02",
+		"tag": "Findings",
+		"title": "Structural deficiencies in AI review",
+		"body": "A strength–weakness asymmetry (easier to impress than to convince) and a strategy effectiveness gradient where narrative reframing far outperforms surface polishing. Systematic, not random.",
+		"href": "#findings"
+	},
+	{
+		"n": "03",
+		"tag": "Dataset",
+		"title": "A contamination-free, rolling dataset",
+		"body": "500+ recent unpublished arXiv preprints, paired LaTeX + PDF, multi-stage filtered: a benchmark that mimics a real AI-assisted peer-review workflow and can be refreshed as models evolve.",
+		"href": "#data"
+	},
+	{
+		"n": "04",
+		"tag": "Framework",
+		"title": "A reusable attack framework",
+		"body": "Full-paper presentation editing + signal-driven strategy selection + closed-loop optimization on the reviewer's own feedback. With the dataset, a reusable benchmark for AI-review robustness.",
+		"href": "#method"
+	}
+]

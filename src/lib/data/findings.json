@@ -1,0 +1,26 @@
+{
+	"asymmetry": {
+		"strengthImprove": 86.1,
+		"strengthMean": 2.19,
+		"severityDecrease": 68.4,
+		"severityBackfire": 31.6,
+		"strengthBackfire": 12.4,
+		"backfireRatio": 2.6,
+		"ideal": 67.7,
+		"praiseAndHarsher": 18.4,
+		"swamping": 15.8,
+		"paperLevel": 79.2,
+		"noUpdateStrength": 79.9,
+		"noUpdateSevWorse": 45.3
+	},
+	"strategies": {
+		"baseline": 30.8,
+		"rows": [
+			{ "name": "Analytical discussion expansion", "firstHit": 66.0, "expRate": 44.9, "dStr": 2.63, "dSev": -1.98, "tier": "narrative" },
+			{ "name": "Related-work repositioning", "firstHit": 44.7, "expRate": 49.3, "dStr": 2.36, "dSev": -1.42, "tier": "narrative" },
+			{ "name": "Abstract reframing", "firstHit": 42.6, "expRate": 37.4, "dStr": 2.11, "dSev": -1.1, "tier": "narrative" },
+			{ "name": "Self-deprecation removal", "firstHit": 44.7, "expRate": 40.0, "dStr": 1.66, "dSev": -0.87, "tier": "narrative" },
+			{ "name": "Contribution list enhancement", "firstHit": 87.2, "expRate": 36.8, "dStr": 1.96, "dSev": -0.88, "tier": "structural" }
+		]
+	}
+}

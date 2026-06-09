@@ -1,0 +1,34 @@
+{
+	"dataset": {
+		"title": "What makes it a clean testbed",
+		"facts": [
+			{
+				"v": "Contamination-free",
+				"l": "Unpublished arXiv preprints only, dual-verified against publication records, so the target papers aren't already in the reviewer models' training data."
+			},
+			{
+				"v": "Rolling",
+				"l": "The construction pipeline is fully automated and re-runnable, so the benchmark refreshes with new preprints and never goes stale as models improve."
+			},
+			{
+				"v": "Realistic AI peer-review workflow",
+				"l": "Every paper ships as paired LaTeX source + compiled PDF: the attacker edits the source, the reviewer evaluates the rendered PDF, matching the real AI-assisted review setup."
+			},
+			{
+				"v": "Diverse & representative",
+				"l": "Spans ML, CV, and NLP, multi-stage filtered to genuine research submissions with review scores in a representative, decision-relevant range, not surveys, reports, or low-quality submissions."
+			}
+		]
+	},
+	"pipeline": {
+		"title": "A re-runnable construction pipeline",
+		"intro": "Released as open code: fully automated, no manual curation. Re-run it anytime to rebuild a fresh, uncontaminated set.",
+		"stages": [
+			{ "n": "Collect", "d": "Fetch recent arXiv preprints (ML / CV / NLP) that ship both a compiled PDF and editable LaTeX source" },
+			{ "n": "Dedup & metadata screen", "d": "Deduplicate versions, require multiple authors, and keyword-filter out surveys, technical reports, and position papers" },
+			{ "n": "Publication-status check", "d": "Exclude already-published work, dual-verified via arXiv metadata (journal ref / DOI) and Semantic Scholar (the contamination guard)" },
+			{ "n": "Download & validate", "d": "Download the paired LaTeX source and PDF, keeping papers whose page count falls in range" },
+			{ "n": "LLM quality & review filter", "d": "Filter with an LLM quality check and multiple AI reviewers, retaining sound papers within a moderate-score range" }
+		]
+	}
+}

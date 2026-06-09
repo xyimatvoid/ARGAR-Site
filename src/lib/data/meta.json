@@ -1,0 +1,18 @@
+{
+	"title": "Adversarial Repackaging Is Enough",
+	"subtitle": "Gaming AI Peer Review Without Changing the Science",
+	"thesis": "Editing only how a paper is presented (its abstract, contribution statements, and narrative) while every dataset, method, and number stays fixed, can systematically overturn an AI reviewer's verdict.",
+	"authors": "Anonymous Authors",
+	"venue": "Under review",
+	"abstract": "As paper submissions grow against a shortage of qualified reviewers, LLM-generated reviews are rapidly entering peer review for their efficiency, yet robustness discussions focus primarily on explicit attacks such as prompt injection. We identify a more subtle and policy-relevant risk: modifying only presentation-level content (abstracts, contribution statements, and narrative structure, with scientific content held fixed) can systematically overturn AI review outcomes. We propose resistance to presentation-only review gaming as a necessary condition for AI review automation, and test it via adversarial repackaging: iteratively searching presentation-level edits using the AI reviewer's own feedback. Across three mainstream models, the attack achieves a 75.1% success rate with a mean score gain of +1.21/10. Further analysis reveals structural deficiencies: a strength–weakness asymmetry, where highlighting strengths is easier and more reliable while attempts to dissolve criticisms frequently backfire; and a strategy effectiveness gradient, where edits changing how the reviewer understands the paper far outperform those improving surface appearance. This vulnerability is consistent across models and review templates: not a fixable single-model issue but a structural deficiency that could distort the incentive structure of peer review. We release a contamination-free dataset and attack framework as a reusable benchmark.",
+	"links": [
+		{ "label": "arXiv", "href": "https://arxiv.org/", "kind": "primary" },
+		{ "label": "Code", "href": "https://github.com/", "kind": "secondary" }
+	],
+	"stats": [
+		{ "value": 75.1, "decimals": 1, "suffix": "%", "label": "Attack success rate", "note": "across three mainstream reviewer models" },
+		{ "value": 1.21, "decimals": 2, "suffix": "", "prefix": "+", "label": "Mean score gain", "note": "out of 10, science unchanged" },
+		{ "value": 3, "decimals": 0, "suffix": "", "label": "Models affected", "note": "not a single-model quirk" },
+		{ "value": 8, "decimals": 0, "suffix": "", "prefix": "≤", "label": "Search rounds", "note": "full-paper presentation edits" }
+	]
+}
