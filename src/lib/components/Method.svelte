@@ -61,7 +61,7 @@
 		<div class="layout">
 			<!-- the ring -->
 			<div class="ring-wrap" use:reveal={{ delay: 60 }}>
-				<div class="ring">
+				<div class="rloop">
 					<svg class="ring-svg" viewBox="0 0 100 100" aria-hidden="true">
 						<circle cx="50" cy="50" r="41" class="orbit" />
 						<circle
@@ -162,7 +162,7 @@
 		display: grid;
 		place-items: center;
 	}
-	.ring {
+	.rloop {
 		position: relative;
 		width: min(100%, 480px);
 		aspect-ratio: 1;
@@ -339,9 +339,10 @@
 		display: flex;
 		align-items: center;
 		gap: 8px;
-		font-size: 10.5px;
-		letter-spacing: 0.12em;
-		color: var(--muted);
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		color: var(--ink-soft);
 	}
 	.rd {
 		width: 7px;
@@ -496,7 +497,7 @@
 		.layout {
 			grid-template-columns: 1fr;
 		}
-		.ring {
+		.rloop {
 			width: min(100%, 420px);
 		}
 		.pillars {
@@ -504,7 +505,7 @@
 		}
 	}
 	@media (max-width: 520px) {
-		.ring {
+		.rloop {
 			width: min(100%, 300px);
 		}
 		.node {

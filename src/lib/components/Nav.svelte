@@ -52,7 +52,7 @@
 				</svg>
 			</span>
 			<span class="bt">
-				<b>Adversarial Repackaging</b>
+				<b>No Hidden Prompts Needed!</b>
 				<i class="mono">peer-review gaming</i>
 			</span>
 		</a>

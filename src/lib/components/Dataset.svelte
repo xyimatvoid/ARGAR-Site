@@ -68,7 +68,7 @@
 				<b>The construction pipeline is released</b>
 				<span>Re-run it to rebuild a fresh, contamination-free benchmark as models evolve; the data stays rolling, never a frozen snapshot.</span>
 			</div>
-			<a class="btn btn-primary" href="https://arxiv.org/" target="_blank" rel="noopener">
+			<a class="btn btn-primary" href="https://arxiv.org/abs/2606.13044" target="_blank" rel="noopener">
 				Read the paper
 				<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
 					><path d="M7 17 L17 7 M9 7 h8 v8" stroke-linecap="round" stroke-linejoin="round" /></svg

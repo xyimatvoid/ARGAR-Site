@@ -6,7 +6,7 @@
 <header id="top" class="hero">
 	<div class="wrap">
 		<h1 class="title" use:reveal style="--d:60ms">
-			Adversarial <span class="accent">Repackaging</span> Is Enough
+			No Hidden <span class="accent">Prompts</span> Needed!
 		</h1>
 
 		<p class="tagline" use:reveal style="--d:140ms">{meta.subtitle}</p>

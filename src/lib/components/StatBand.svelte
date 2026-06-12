@@ -31,7 +31,7 @@
 		<!-- left: the result + key numbers -->
 		<div class="left">
 			<h2 class="claim" use:reveal={{ delay: 40 }}>
-				Adversarial Repackaging Gaming AI Review
+				No Hidden Prompts Needed! Gaming AI Review
 				<span class="abbr mono">ARGAR</span>
 			</h2>
 			<p class="lead" use:reveal={{ delay: 80 }}>

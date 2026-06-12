@@ -2,11 +2,14 @@
 	import meta from '$lib/data/meta.json';
 	import { reveal } from '$lib/actions';
 
-	const bibtex = `@article{adversarial_repackaging,
-  title = {${meta.title}: ${meta.subtitle}},
-  year  = {2026},
-  note  = {Under review},
-  url   = {${meta.links[0].href}}
+	const bibtex = `@misc{yang2026hiddenpromptsneededgame,
+  title   = {No Hidden Prompts Needed! You Can Game AI Peer Review with Presentation-Only Revisions},
+  author  = {Xu Yang and Zhizhou Sha and Junbo Li and Jian Yu and Yifan Sun and Matthew Zhao and Jinrui Fang and Xinyue Guo and Yining Wu and Xu Hu and Yifu Luo and Qiang Liu and Zhangyang Wang},
+  year    = {2026},
+  eprint  = {2606.13044},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url     = {https://arxiv.org/abs/2606.13044}
 }`;
 
 	let copied = $state(false);
